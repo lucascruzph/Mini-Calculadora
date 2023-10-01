@@ -15,7 +15,7 @@ public:
     {
         return a * b;
     }
-    int dividir(float a, float b)
+    int dividir(int a, int b)
     {
         return a / b;
     }
@@ -88,7 +88,7 @@ int main()
     if (escolhaOperacao == 4)
     {
         Calculadora minhaCalculadora;
-        float num1, num2;
+        int num1, num2;
 
         std::cout << "Digite o primeiro número: ";
         std::cin >> num1;
@@ -97,7 +97,7 @@ int main()
         std::cin >> num2;
         
         //Parei aqui tentando fazer uma divisão entre numeros não inteiros
-        float resultado = minhaCalculadora.dividir(num1, num2);
+        int resultado = minhaCalculadora.dividir(num1, num2);
         std::cout << "A divisão de " << num1 << " e " << num2 << " é " << resultado << std::endl;
     }
 
